@@ -2,6 +2,7 @@
     padding: .5rem 1rem;
     border: solid 1px var(--letra-semioscura);
     border-right: none;
+    font-size: 1rem;
     color: var(--letra-oscura);
     border-radius: .5rem 0 0 .5rem;
     -webkit-border-radius: .5rem 0 0 .5rem;

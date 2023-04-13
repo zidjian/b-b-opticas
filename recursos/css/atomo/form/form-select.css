@@ -1,0 +1,25 @@
+.form-select {
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    color: var(--letra-oscura);
+    background: none;
+    border: none;
+    border-bottom: solid 1px var(--letra-oscura);
+    outline: none;
+    appearance: none;
+    display: inline-block;
+}
+
+.form-select:focus + .form-label,
+.form-select:not(:placeholder-shown) + .form-label {
+    transform: translateY(-.8rem) scale(.7);
+    width: 100%;
+    background: var(--letra-clara);
+    transform-origin: top left;
+    color: var(--principal);
+    -webkit-transform: translateY(-.8rem) scale(.7);
+    -moz-transform: translateY(-.8rem) scale(.7);
+    -ms-transform: translateY(-.8rem) scale(.7);
+    -o-transform: translateY(-.8rem) scale(.7);
+}
