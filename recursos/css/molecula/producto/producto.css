@@ -1,0 +1,19 @@
+.producto {
+    padding: 2rem;
+    box-sizing: border-box;
+    border: solid 1px var(--letra-semioscura);
+}
+
+@media screen and (min-width: 768px) {
+    .producto {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}

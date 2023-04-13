@@ -1,0 +1,16 @@
+.masinfo-elemento {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+    .masinfo-elemento {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}

@@ -1,0 +1,6 @@
+.form-label {
+    position: absolute;
+    top: .8rem;
+    left: 1rem;
+    color: var(--letra-semioscura);
+}

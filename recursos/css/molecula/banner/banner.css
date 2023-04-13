@@ -1,0 +1,16 @@
+.banner {
+    width: 100%;
+    height: 360px;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%), url(./../../../imagenes/banners/banner.png) center no-repeat;
+    background-size: cover;
+}
+
+.banner-contenido {
+    box-sizing: border-box;
+    padding: 1rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}

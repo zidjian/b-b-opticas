@@ -1,0 +1,19 @@
+.titulo-link {
+    color: var(--principal);
+    position: initial;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 700;
+}
+
+.titulo-link::after {
+    background: url(./../../../imagenes/iconos/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+}

@@ -1,0 +1,5 @@
+.producto-sinlink {
+    display: block;
+    text-decoration: none;
+    color: var(--letra-semioscura);
+}

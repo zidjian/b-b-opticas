@@ -1,0 +1,9 @@
+.paginas-link {
+    text-decoration: none;
+    color: var(--letra-oscura);
+}
+
+.paginas-link:hover {
+    text-decoration: none;
+    color: var(--principal);
+}

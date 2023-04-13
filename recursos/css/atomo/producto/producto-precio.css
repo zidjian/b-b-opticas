@@ -1,0 +1,9 @@
+.producto-precio {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+
+.producto-precio::before {
+    content: 'S/ ';
+}

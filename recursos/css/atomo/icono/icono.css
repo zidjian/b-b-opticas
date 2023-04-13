@@ -1,0 +1,16 @@
+.icono {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icono_buscar {
+    background-image: url(./../../../imagenes/iconos/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icono_flecha {
+    background-image: url(./../../../imagenes/iconos/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}

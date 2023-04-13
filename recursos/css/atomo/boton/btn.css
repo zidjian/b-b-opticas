@@ -1,0 +1,14 @@
+.btn {
+    display: block;
+    padding: .5rem 2rem;
+    background-color: var(--principal);
+    text-decoration: none;
+    color: var(--letra-clara);
+    border: none;
+    align-self: center;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}

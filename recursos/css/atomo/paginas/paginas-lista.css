@@ -1,0 +1,6 @@
+.paginas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+}

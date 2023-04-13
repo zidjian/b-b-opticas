@@ -1,0 +1,20 @@
+.buscadorMobil {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--letra-oscura);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.buscadorMobil.activado {
+    left: 0;
+}

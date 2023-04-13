@@ -24,13 +24,55 @@
     <link rel="stylesheet" href="./recursos/css/colores.css">
     <link rel="stylesheet" href="./recursos/css/template/index.css">
 
-    <link rel="stylesheet" href="./recursos/css/organismo/cabecera.css">
-    <link rel="stylesheet" href="./recursos/css/atomo/boton/boton.css">
-    <link rel="stylesheet" href="./recursos/css/atomo/logo/logo.css">
-    <link rel="stylesheet" href="./recursos/css/atomo/icono/icono.css">
-    <link rel="stylesheet" href="./recursos/css/atomo/campo/campo.css">
-    <link rel="stylesheet" href="./recursos/css/organismo/banner.css">
+    <link rel="stylesheet" href="./recursos/css/template/cabecera.css">
 
+    <link rel="stylesheet" href="./recursos/css/molecula/buscador/buscadorGrande.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/buscador/buscadorMobil.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/buscador/buscadorToggle.css">
+
+    <link rel="stylesheet" href="./recursos/css/atomo/boton/btn.css">
+
+    <link rel="stylesheet" href="./recursos/css/molecula/logo/logo.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/logo/logo-imagen.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/logo/logo-nombre.css">
+
+    <link rel="stylesheet" href="./recursos/css/atomo/icono/icono.css">
+
+    <link rel="stylesheet" href="./recursos/css/molecula/banner/banner.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/banner/banner-titulo.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/banner/banner-detalle.css">
+
+    <link rel="stylesheet" href="./recursos/css/organismo/tipo.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/tipo/tipo-cabecera.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/tipo/tipo-titulo.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/tipo/titulo-link.css">
+
+    <link rel="stylesheet" href="./recursos/css/organismo/productos.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/producto/producto.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/producto/producto-imagen.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/producto/producto-link.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/producto/producto-nombre.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/producto/producto-precio.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/producto/producto-sinlink.css">
+
+    <link rel="stylesheet" href="./recursos/css/organismo/masinfo.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/masinfo/masinfo-elemento.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/masinfo/company.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/company/company-objetivo.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/masinfo/contacto.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/contacto/contacto-titulo.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/masinfo/paginas.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/paginas/paginas-elemento.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/paginas/paginas-link.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/paginas/paginas-lista.css">
+
+    <link rel="stylesheet" href="./recursos/css/organismo/form.css">
+    <link rel="stylesheet" href="./recursos/css/molecula/form/form-grupo.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/form/form-campo.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/form/form-label.css">
+    <link rel="stylesheet" href="./recursos/css/atomo/form/form-alerta.css">
+
+    <link rel="stylesheet" href="./recursos/css/atomo/piepagina/piepagina-mensaje.css">
 </head>
 <body>
     <header class="cabecera">
@@ -39,20 +81,22 @@
                 <img src="./recursos/imagenes/favicon.png" alt="Logo B&B Ópticas" class="logo-imagen">
                 <span class="logo-nombre">B&B Ópticas</span>
             </div>
-            <form class="form">
-                <div class="buscar-grupo">
-                    <input type="text" class="buscar-campo" placeholder="Buscar...">
-                    <button class="buscar-icono">
-                        <i class="icono icono_buscar"></i>
-                    </button>
-                </div>
-            </form>
-            <i class="icono icono_buscar btnBuscar"></i>
-            <div class="buscarToggle">
+            <div class="buscadorGrande">
                 <form class="form">
-                    <div class="buscar-grupo">
-                        <input type="text" class="buscar-campo" placeholder="Buscar...">
-                        <button class="buscar-icono">
+                    <div class="buscador">
+                        <input type="text" class="buscador-campo" placeholder="Buscar...">
+                        <button class="buscador-icono">
+                            <i class="icono icono_buscar"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <i class="icono icono_buscar buscadorToggle"></i>
+            <div class="buscadorMobil">
+                <form class="form">
+                    <div class="buscador">
+                        <input type="text" class="buscador-campo" placeholder="Buscar...">
+                        <button class="buscador-icono">
                             <i class="icono icono_buscar"></i>
                         </button>
                     </div>
@@ -65,11 +109,12 @@
         <section class="banner">
             <div class="banner-contenido contenedor contenedor_principal">
                 <h1 class="banner-titulo">Promociones de abril</h1>
-                <p class="banner-detalle">Lentes de sol con hasta 40% de descuento</p>
+                <p class="banner-detalle">Lentes para muejeres con hasta 40% de descuento</p>
+                <a href="#" role="link" class="btn">Ver Lentes</a>
             </div>
         </section>
         <section class="tipo">
-            <div class="tipo-contenido contenedor contenedor_pricnipal">
+            <div class="tipo-contenido contenedor contenedor_principal">
                 <div class="tipo-cabecera">
                     <h2 class="tipo-titulo">Lentes para Varónes</h2>
                     <a href="#" class="titulo-link">Ver todo</a>
@@ -139,7 +184,7 @@
             </div>
         </section>
         <section class="tipo">
-            <div class="tipo-contenido contenedor contenedor_pricnipal">
+            <div class="tipo-contenido contenedor contenedor_principal">
                 <div class="tipo-cabecera">
                     <h2 class="tipo-titulo">Lentes para Mujeres</h2>
                     <a href="#" class="titulo-link">Ver todo</a>
@@ -209,7 +254,7 @@
             </div>
         </section>
         <section class="tipo">
-            <div class="tipo-contenido contenedor contenedor_pricnipal">
+            <div class="tipo-contenido contenedor contenedor_principal">
                 <div class="tipo-cabecera">
                     <h2 class="tipo-titulo">Lentes para Niños</h2>
                     <a href="#" class="titulo-link">Ver todo</a>
@@ -282,14 +327,15 @@
     <footer>
         <div class="masinfo">
             <div class="masinfo-contenido contenedor contenedor_principal">
-                <div class="company">
+                <div class="masinfo-elemento company">
                     <div class="logo">
                         <img src="./recursos/imagenes/favicon.png" alt="Logo B&B Ópticas" class="logo-imagen">
-                        <span>B&B Ópticas</span>
+                        <span class="logo-nombre">B&B Ópticas</span>
                     </div>
                     <p class="company-objetivo">La mejor tienda para comprar lentes oftalmicos, de sol y contacto en todo el sur del Perú</p>
                 </div>
-                <div class="paginas">
+                <div class="masinfo-elemento paginas">
+                    <p class="contacto-titulo">Páginas</p>
                     <ul class="paginas-lista">
                         <li class="paginas-elemento"><a href="#" role="link" class="paginas-link">Quienes somos</a></li>
                         <li class="paginas-elemento"><a href="#" role="link" class="paginas-link">Politicas de privacidad</a></li>
@@ -297,25 +343,27 @@
                         <li class="paginas-elemento"><a href="#" role="link" class="paginas-link">Nuestras tiendas</a></li>
                     </ul>
                 </div>
-                <div class="contacto">
-                    <p class="contacto titulo">Contactenos</p>
+                <div class="masinfo-elemento contacto">
+                    <p class="contacto-titulo">Contactenos</p>
                     <form action="" class="form">
                         <div class="form-grupo">
+                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" ">
                             <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-campo" name="nombre" id="nombre">
+                            <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
+                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" "></textarea>
                             <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea name="mensaje" class="form-mensaje" id="mensaje"></textarea>
+                            <p class="form-alerta">Mensaje de alerta</p>
                         </div>
-                        <button class="btn"></button>
+                        <button class="btn">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="piepagina">
             <div class="piepagina-contenido contenedor contenedor_principal">
-                <p>&copy; 2023. Desarrollado por Waldir Maidana</p>
+                <p class="piepagina-mensaje">&copy; 2023. Desarrollado por Waldir Maidana</p>
             </div>
         </div>
     </footer>

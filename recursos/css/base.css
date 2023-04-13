@@ -1,6 +1,7 @@
 html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 .contenedor {
@@ -10,4 +11,31 @@ html, body {
 .contenedor_principal {
     width: calc(100% - 2rem);
     margin: 0 auto;
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    html, body {
+        font-size: 18px;
+    }
+
+    .contenedor_principal {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html, body {
+        font-size: 20px;
+    }
+    .contenedor_principal {
+        width: 70%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1440px) {
 }

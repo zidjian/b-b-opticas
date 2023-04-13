@@ -1,0 +1,25 @@
+.form-campo {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px var(--letra-semioscura);
+    color: var(--letra-oscura);
+}
+
+.form-campo.requerido {
+    border-bottom: solid 1px var(--alerta);
+}
+
+.form-campo:focus + .form-label,
+.form-campo:not(:placeholder-shown) + .form-label {
+    transform: translateY(-10px) scale(.7);
+    transform-origin: top left;
+    color: var(--principal);
+    -webkit-transform: translateY(-10px) scale(.7);
+    -moz-transform: translateY(-10px) scale(.7);
+    -ms-transform: translateY(-10px) scale(.7);
+    -o-transform: translateY(-10px) scale(.7);
+}
