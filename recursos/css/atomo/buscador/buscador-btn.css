@@ -1,0 +1,10 @@
+.buscador-btn {
+    border: solid 1px var(--letra-semioscura);
+    background: var(--letra-clara);
+    outline: none;
+    border-radius: 0 .5rem .5rem 0;
+    -webkit-border-radius: 0 .5rem .5rem 0;
+    -moz-border-radius: 0 .5rem .5rem 0;
+    -ms-border-radius: 0 .5rem .5rem 0;
+    -o-border-radius: 0 .5rem .5rem 0;
+}

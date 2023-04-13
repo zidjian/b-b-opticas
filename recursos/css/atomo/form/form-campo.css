@@ -15,11 +15,13 @@
 
 .form-campo:focus + .form-label,
 .form-campo:not(:placeholder-shown) + .form-label {
-    transform: translateY(-10px) scale(.7);
+    transform: translateY(-.8rem) scale(.7);
+    width: 100%;
+    background: var(--letra-clara);
     transform-origin: top left;
     color: var(--principal);
-    -webkit-transform: translateY(-10px) scale(.7);
-    -moz-transform: translateY(-10px) scale(.7);
-    -ms-transform: translateY(-10px) scale(.7);
-    -o-transform: translateY(-10px) scale(.7);
+    -webkit-transform: translateY(-.8rem) scale(.7);
+    -moz-transform: translateY(-.8rem) scale(.7);
+    -ms-transform: translateY(-.8rem) scale(.7);
+    -o-transform: translateY(-.8rem) scale(.7);
 }

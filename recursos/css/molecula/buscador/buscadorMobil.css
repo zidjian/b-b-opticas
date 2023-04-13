@@ -16,5 +16,28 @@
 }
 
 .buscadorMobil.activado {
-    left: 0;
+    transform: translateX(-100%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+    .buscadorMobil {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
 }
