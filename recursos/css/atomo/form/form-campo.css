@@ -7,6 +7,7 @@
     border: none;
     border-bottom: solid 1px var(--letra-semioscura);
     color: var(--letra-oscura);
+    resize: none;
 }
 
 .form-campo.requerido {
@@ -24,4 +25,8 @@
     -moz-transform: translateY(-.8rem) scale(.7);
     -ms-transform: translateY(-.8rem) scale(.7);
     -o-transform: translateY(-.8rem) scale(.7);
+}
+
+.form-campo:focus {
+    border-bottom: solid 1px var(--principal);
 }

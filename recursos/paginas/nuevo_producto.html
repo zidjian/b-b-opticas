@@ -40,6 +40,7 @@
 
     <!-- Botones -->
     <link rel="stylesheet" href="./../css/atomo/boton/btn.css">
+    <link rel="stylesheet" href="./../css/atomo/boton/botones-grupo.css">
 
     <!-- Logo -->
     <link rel="stylesheet" href="./../css/molecula/logo/logo.css">
@@ -86,10 +87,10 @@
 <body>
     <header class="cabecera">
         <div class="cabecera-contenido contenedor contenedor_principal">
-            <div class="logo">
+            <a href="./../../index.html" role="link" class="logo">
                 <img src="./../imagenes/favicon.png" alt="Logo B&B Ópticas" class="logo-imagen">
                 <span class="logo-nombre">B&B Ópticas</span>
-            </div>
+            </a>
             <div class="buscadorGrande">
                 <form class="form">
                     <div class="buscador">
@@ -118,38 +119,41 @@
         <section class="tipo">
             <div class="tipo-contenido contenedor contenedor_principal">
                 <div class="login">
-                    <p class="contacto-titulo contacto-titulo_centrado">Login</p>
-                    <form action="" class="form">
+                    <p class="contacto-titulo contacto-titulo_centrado">Agregar producto</p>
+                    <form class="form" id="agregarProducto" novalidate>
                         <div class="form-grupo">
-                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" ">
+                            <input type="text" class="form-campo" name="nombre" id="nombre" placeholder=" " data-imagen data-tipo="url" pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?" required autocomplete="off">
                             <label for="nombre" class="form-label">URL de imagen</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
-                            <select class="form-select" name="Tipo" id="categoria">
-                                <option value="">Varón</option>
-                                <option value="">Mujer</option>
-                                <option value="">Niños</option>
+                            <select class="form-select" name="Tipo" id="categoria" data-categoria>
+                                <option value="Varón">Varón</option>
+                                <option value="Mujer">Mujer</option>
+                                <option value="Niños">Niños</option>
                             </select>
                             <label for="nombre" class="form-label">Género</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
-                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" ">
+                            <input type="text" class="form-campo" name="nombre" id="nombre" placeholder=" " data-nombre data-tipo="todo" required required autocomplete="off">
                             <label for="nombre" class="form-label">Nombre</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
-                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" ">
+                            <input type="text" class="form-campo" name="nombre" id="nombre" placeholder=" " data-precio data-tipo="numeros" pattern="[0-9]*" required required autocomplete="off">
                             <label for="mensaje" class="form-label">Precio</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
-                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" "></textarea>
+                            <textarea name="mensaje" rows="3" class="form-campo" id="mensaje" placeholder=" " data-descripcion data-tipo="todo" required></textarea>
                             <label for="mensaje" class="form-label">Descripción</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
-                        <button class="btn">Entrar</button>
+                        <div class="botones-grupo">
+                            <a href="./productos.html" type="link" class="btn btn_regresar">Regresar</a>
+                            <button type="submit" class="btn">Guardar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -159,10 +163,10 @@
         <div class="masinfo">
             <div class="masinfo-contenido contenedor contenedor_principal">
                 <div class="masinfo-elemento company">
-                    <div class="logo">
+                    <a href="#" role="link" class="logo">
                         <img src="./../imagenes/favicon.png" alt="Logo B&B Ópticas" class="logo-imagen">
                         <span class="logo-nombre">B&B Ópticas</span>
-                    </div>
+                    </a>
                     <p class="company-objetivo">La mejor tienda para comprar lentes oftalmicos, de sol y contacto en todo el sur del Perú</p>
                 </div>
                 <div class="masinfo-elemento paginas">
@@ -178,12 +182,12 @@
                     <p class="contacto-titulo">Contactenos</p>
                     <form action="" class="form">
                         <div class="form-grupo">
-                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" ">
+                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" " autocomplete="off" data-tipo="todo" required>
                             <label for="nombre" class="form-label">Nombre</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
-                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" "></textarea>
+                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" " data-tipo="todo" required></textarea>
                             <label for="mensaje" class="form-label">Mensaje</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
@@ -198,6 +202,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript Externos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JavaScript Interno -->
     <script src="./../js/navegacion.js" defer></script>
+    <script type="module" src="./../js/validar.js"></script>
+    <!-- <script type="module" src="./../js/controladores/agregar_producto.js"></script> -->
 </body>
 </html>

@@ -1,0 +1,4 @@
+.botones-grupo {
+    display: flex;
+    justify-content: space-between;
+}

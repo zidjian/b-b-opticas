@@ -14,3 +14,8 @@
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
 }
+
+.btn_regresar {
+    background-color: var(--letra-semioscura);
+    color: var(--letra-clara);
+}

@@ -9,7 +9,19 @@
     outline: none;
     appearance: none;
     display: inline-block;
+    position: relative;
+    background: url(http://tuckeralbin.com/wp-content/uploads/intense-cache/icons/plugin/font-awesome/angle-double-down.svg);
+    background-repeat:no-repeat;
+    background-size: 5%;
+    background-position: 98% 50%;
 }
+
+/* .form-select::after {
+    content: "+";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+} */
 
 .form-select:focus + .form-label,
 .form-select:not(:placeholder-shown) + .form-label {
