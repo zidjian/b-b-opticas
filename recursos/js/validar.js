@@ -1,58 +1,33 @@
-import { ProductosServicio } from "./servicios/producto.servicio.js";
+const form_contacto = document.getElementById("formContacto");
 
-const miform = document.getElementById("agregarProducto");
+form_contacto.addEventListener('submit', enviarMensaje);
 
-miform.addEventListener("submit", manejadorEnvios);
-
-async function manejadorEnvios(evento) {
+function enviarMensaje(evento) {
     evento.preventDefault();
-
-    if (validarCampos()) {
+    const campos_producto = document.querySelectorAll("#formContacto .form-campo");
+    if (validarCampos(campos_producto)) {
         return;
     }
-
-    const imagen = document.querySelector("[data-imagen]").value;
-    const categoria = document.querySelector("[data-categoria]").value;
-    const nombre = document.querySelector("[data-nombre]").value;
-    const precio = document.querySelector("[data-precio]").value;
-    const descripcion = document.querySelector("[data-descripcion]").value;
-
-    console.log(nombre, descripcion, categoria, precio, imagen);
-
-    try {
-        await ProductosServicio.crearProducto(
-            nombre,
-            descripcion,
-            categoria,
-            precio,
-            imagen
-        ).then(() => {
-            miform.reset();
-            Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "Se ha guardado correctamente",
-                showConfirmButton: false,
-                timer: 3000,
-            }).then(() => {
-                window.location.href = './productos.html';
-            });
-        });
-    } catch (error) {
-        console.log("error");
-    }
+    form_contacto.reset();
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Se ha enviado correctamente tu mensaje",
+        showConfirmButton: false,
+        timer: 5000,
+    });
 }
 
-const campos = document.querySelectorAll("#agregarProducto .form-campo");
+const campos = document.querySelectorAll(".form-campo");
 campos.forEach((campo) => {
     campo.addEventListener("blur", (campo) => {
         validarCampo(campo.target);
     });
 });
 
-function validarCampos() {
+function validarCampos(campos_producto) {
     let con_error;
-    campos.forEach((campo) => {
+    campos_producto.forEach((campo) => {
         if (!validarCampo(campo)) {
             con_error = true;
         }
@@ -83,6 +58,10 @@ const mensajesDeError = {
         valueMissing: "El campo es obligatorio",
         patternMismatch: "Solo se aceptan links validos",
     },
+    email: {
+        valueMissing: "El campo es obligatorio",
+        typeMismatch: "Formato incorrecto de email",
+    }
 };
 
 function validarCampo(campo) {
@@ -90,6 +69,7 @@ function validarCampo(campo) {
     let con_error;
     tipoDeErrores.forEach((error) => {
         if (campo.validity[error]) {
+            console.log(error);
             campo.classList.add("requerido");
             campo.nextElementSibling.nextElementSibling.classList.add(
                 "requerido"

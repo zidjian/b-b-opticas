@@ -103,9 +103,9 @@
             </div>
             <i class="icono icono_buscar buscadorToggle"></i>
             <div class="buscadorMobil">
-                <form class="form">
+                <form action="./productos.html" class="form">
                     <div class="buscador">
-                        <input type="text" class="buscador-campo" placeholder="Buscar...">
+                        <input type="text" class="buscador-campo" placeholder="Buscar..." name="q">
                         <button class="buscador-btn">
                             <i class="icono icono_buscar"></i>
                         </button>
@@ -180,18 +180,18 @@
                 </div>
                 <div class="masinfo-elemento contacto">
                     <p class="contacto-titulo">Contactenos</p>
-                    <form action="" class="form">
+                    <form action="" class="form" id="formContacto" novalidate>
                         <div class="form-grupo">
-                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" " autocomplete="off" data-tipo="todo" required>
+                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" " autocomplete="off" data-tipo="todo" required maxlength="40">
                             <label for="nombre" class="form-label">Nombre</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
-                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" " data-tipo="todo" required></textarea>
+                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" " data-tipo="todo" required maxlength="120"></textarea>
                             <label for="mensaje" class="form-label">Mensaje</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
-                        <button class="btn">Enviar</button>
+                        <button type="submit" class="btn">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -209,7 +209,7 @@
 
     <!-- JavaScript Interno -->
     <script src="./../js/navegacion.js" defer></script>
-    <script type="module" src="./../js/validar.js"></script>
-    <!-- <script type="module" src="./../js/controladores/agregar_producto.js"></script> -->
+    <script src="./../js/validar.js" defer></script>
+    <script type="module" src="./../js/controladores/agregar_producto.js" defer></script>
 </body>
 </html>

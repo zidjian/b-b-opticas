@@ -96,9 +96,9 @@
                 <span class="logo-nombre">B&B Ópticas</span>
             </a>
             <div class="buscadorGrande">
-                <form class="form">
+                <form action="./recursos/paginas/productos.html" class="form">
                     <div class="buscador">
-                        <input type="text" class="buscador-campo" placeholder="Buscar...">
+                        <input type="text" class="buscador-campo" placeholder="Buscar..." name="q">
                         <button class="buscador-btn">
                             <i class="icono icono_buscar"></i>
                         </button>
@@ -107,9 +107,9 @@
             </div>
             <i class="icono icono_buscar buscadorToggle"></i>
             <div class="buscadorMobil">
-                <form class="form">
+                <form action="./recursos/paginas/productos.html" class="form">
                     <div class="buscador">
-                        <input type="text" class="buscador-campo" placeholder="Buscar...">
+                        <input type="text" class="buscador-campo" placeholder="Buscar..." name="q">
                         <button class="buscador-btn">
                             <i class="icono icono_buscar"></i>
                         </button>
@@ -125,7 +125,7 @@
             <div class="banner-contenido contenedor contenedor_principal">
                 <h1 class="banner-titulo">Promociones de abril</h1>
                 <p class="banner-detalle">Lentes para muejeres con hasta 40% de descuento</p>
-                <a href="#" role="link" class="btn">Ver Lentes</a>
+                <a href="#mujeres" role="link" class="btn">Ver Lentes</a>
             </div>
         </section>
         <section class="tipo">
@@ -198,7 +198,7 @@
                 </div>
             </div>
         </section>
-        <section class="tipo">
+        <section class="tipo" id="mujeres">
             <div class="tipo-contenido contenedor contenedor_principal">
                 <div class="tipo-cabecera">
                     <h2 class="tipo-titulo">Lentes para Mujeres</h2>
@@ -360,18 +360,18 @@
                 </div>
                 <div class="masinfo-elemento contacto">
                     <p class="contacto-titulo">Contactenos</p>
-                    <form action="" class="form">
+                    <form action="" class="form" id="formContacto" novalidate>
                         <div class="form-grupo">
-                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" " autocomplete="off">
+                            <input type="text" class="form-campo form-campo_texto" name="nombre" id="nombre" placeholder=" " autocomplete="off" data-tipo="todo" required maxlength="40">
                             <label for="nombre" class="form-label">Nombre</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
                         <div class="form-grupo">
-                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" "></textarea>
+                            <textarea name="mensaje" rows="3" class="form-campo form-campo_mensaje" id="mensaje" placeholder=" " data-tipo="todo" required maxlength="120"></textarea>
                             <label for="mensaje" class="form-label">Mensaje</label>
                             <p class="form-alerta">Mensaje de alerta</p>
                         </div>
-                        <button class="btn">Enviar</button>
+                        <button type="submit" class="btn">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -382,6 +382,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript Externos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JavaScript Interno -->
     <script src="./recursos/js/navegacion.js" defer></script>
+    <script src="./recursos/js/validar.js" defer></script>
 </body>
 </html>
