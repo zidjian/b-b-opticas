@@ -1,0 +1,4 @@
+.producto-botones {
+    display: flex;
+    justify-content: space-between;
+}

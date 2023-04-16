@@ -13,8 +13,15 @@ const crearProducto = (nombre, descripcion, categoria, precio, imagen) => {
     });
 };
 
+const elimianrProducto = (id) => {
+    return fetch(`${url}/${id}`, {
+        method: 'DELETE'
+    });
+};
+
 
 export const ProductosServicio = {
     productos,
-    crearProducto
+    crearProducto,
+    elimianrProducto
 };
