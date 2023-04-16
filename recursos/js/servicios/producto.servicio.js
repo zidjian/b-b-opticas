@@ -19,9 +19,23 @@ const elimianrProducto = (id) => {
     });
 };
 
+const obtenerProducto = (id) =>
+    fetch(`${url}/${id}`).then((respuesta) => respuesta.json());
+
+const editarProducto = (id, nombre, descripcion, tipo, precio, imagen) => {
+    return fetch(`${url}/${id}`, {
+        method: 'PUT',
+        headers: {
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify({nombre, descripcion, tipo, precio, imagen})
+    });
+};
+
 
 export const ProductosServicio = {
     productos,
     crearProducto,
-    elimianrProducto
+    elimianrProducto,
+    obtenerProducto
 };
