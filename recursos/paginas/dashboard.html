@@ -65,16 +65,8 @@
     <link rel="stylesheet" href="./../css/atomo/producto/producto-nombre.css">
     <link rel="stylesheet" href="./../css/atomo/producto/producto-precio.css">
     <link rel="stylesheet" href="./../css/atomo/producto/producto-sinlink.css">
+    <link rel="stylesheet" href="./../css/atomo/producto/producto-botones.css">
 
-    <!-- ProductoDetalle -->
-    <link rel="stylesheet" href="./../css/organismo/productoDetalle.css">
-    <link rel="stylesheet" href="./../css/molecula/producto/productoDetalle-informacion.css">
-    <link rel="stylesheet" href="./../css/molecula/producto/productoDetalle-carrucel.css">
-    <link rel="stylesheet" href="./../css/atomo/productoDetalle/productoDetalle-descripcion.css">
-    <link rel="stylesheet" href="./../css/atomo/productoDetalle/productoDetalle-imagen.css">
-    <link rel="stylesheet" href="./../css/atomo/productoDetalle/productoDetalle-nombre.css">
-    <link rel="stylesheet" href="./../css/atomo/productoDetalle/productoDetalle-precio.css">
-    
     <!-- Masinfo -->
     <link rel="stylesheet" href="./../css/organismo/masinfo.css">
     <link rel="stylesheet" href="./../css/molecula/masinfo/masinfo-elemento.css">
@@ -116,7 +108,7 @@
             </div>
             <i class="icono icono_buscar buscadorToggle"></i>
             <div class="buscadorMobil">
-                <form action="./recursos/paginas/productos.html" class="form">
+                <form action="./dashboard.html" class="form">
                     <div class="buscador">
                         <input type="text" class="buscador-campo" placeholder="Buscar..." name="q">
                         <button class="buscador-btn">
@@ -126,97 +118,16 @@
                 </form>
                 <div class="buscadorMobil-cerrar">&#10005;</div>
             </div>
-            <a href="./login.html" class="btn btn_lineas">Login</a>
         </div>
     </header>
     <main>
         <section class="tipo">
             <div class="tipo-contenido contenedor contenedor_principal">
-                <div class="productoDetalle">
-                    <div class="productoDetalle-carrucel">
-                        <swiper-container class="mySwiper" pagination="true" data-carrucel>
-                            <swiper-slide>
-                                <img src="./../imagenes/lentes/lente.webp" alt="" class="productoDetalle-imagen">
-                            </swiper-slide>
-                        </swiper-container>
-                    </div>
-                    <div class="productoDetalle-informacion">
-                        <p class="productoDetalle-nombre" data-nombre>Lentes de mujer</p>
-                        <p class="producto-precio" data-precio>600.00</p>
-                        <p class="productoDetalle-descripcion" data-descripcion>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam accusantium, maxime quasi nam non inventore, tempore nemo a asperiores omnis ipsa obcaecati velit sint odit explicabo perferendis ad blanditiis quam?
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="tipo">
-            <div class="tipo-contenido contenedor contenedor_principal">
                 <div class="tipo-cabecera">
-                    <h2 class="tipo-titulo">Productos similares</h2>
+                    <h2 class="tipo-titulo">Todos los lentes</h2>
+                    <a href="./nuevo_producto.html" class="btn">Agregar producto</a>
                 </div>
-                <div class="productos" data-categoria>
-                    <div class="producto">
-                        <a href="#" class="producto-sinlink" role="link">
-                            <img src="./../imagenes/lentes/lente.webp" alt="Producto 1" class="producto-imagen">
-                        </a>
-                        <p class="producto-nombre">
-                            <a href="" class="producto-sinlink" role="link">lentes GUCCI</a>
-                        </p>
-                        <p class="producto-precio">600.00</p>
-                        <a href="" class="producto-link" role="link">Ver producto</a>
-                    </div>
-                    <div class="producto">
-                        <a href="#" class="producto-sinlink" role="link">
-                            <img src="./../imagenes/lentes/lente2.webp" alt="Producto 1" class="producto-imagen">
-                        </a>
-                        <p class="producto-nombre">
-                            <a href="" class="producto-sinlink" role="link">lentes GUCCI</a>
-                        </p>
-                        <p class="producto-precio">600.00</p>
-                        <a href="" class="producto-link" role="link">Ver producto</a>
-                    </div>
-                    <div class="producto">
-                        <a href="#" class="producto-sinlink" role="link">
-                            <img src="./../imagenes/lentes/lente3.webp" alt="Producto 1" class="producto-imagen">
-                        </a>
-                        <p class="producto-nombre">
-                            <a href="" class="producto-sinlink" role="link">lentes GUCCI</a>
-                        </p>
-                        <p class="producto-precio">600.00</p>
-                        <a href="" class="producto-link" role="link">Ver producto</a>
-                    </div>
-                    <div class="producto">
-                        <a href="#" class="producto-sinlink" role="link">
-                            <img src="./../imagenes/lentes/lente4.webp" alt="Producto 1" class="producto-imagen">
-                        </a>
-                        <p class="producto-nombre">
-                            <a href="" class="producto-sinlink" role="link">lentes GUCCI</a>
-                        </p>
-                        <p class="producto-precio">600.00</p>
-                        <a href="" class="producto-link" role="link">Ver producto</a>
-                    </div>
-                    <div class="producto">
-                        <a href="#" class="producto-sinlink" role="link">
-                            <img src="./../imagenes/lentes/lente5.webp" alt="Producto 1" class="producto-imagen">
-                        </a>
-                        <p class="producto-nombre">
-                            <a href="" class="producto-sinlink" role="link">lentes GUCCI</a>
-                        </p>
-                        <p class="producto-precio">600.00</p>
-                        <a href="" class="producto-link" role="link">Ver producto</a>
-                    </div>
-                    <div class="producto">
-                        <a href="#" class="producto-sinlink" role="link">
-                            <img src="./../imagenes/lentes/lente6.webp" alt="Producto 1" class="producto-imagen">
-                        </a>
-                        <p class="producto-nombre">
-                            <a href="" class="producto-sinlink" role="link">lentes GUCCI</a>
-                        </p>
-                        <p class="producto-precio">600.00</p>
-                        <a href="" class="producto-link" role="link">Ver producto</a>
-                    </div>
-                </div>
+                <div class="productos"></div>
             </div>
         </section>
     </main>
@@ -265,13 +176,12 @@
     </footer>
 
     <!-- JavaScript Externos -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- JavaScript Interno -->
     <script src="./../js/navegacion.js" defer></script>
     <script src="./../js/validar.js" defer></script>
-    <script type="module" src="./../js/controladores/detalles.controller.js"></script>
+    <script type="module" src="./../js/controladores/dashboard.controller.js"></script>
 </body>
 </html>

@@ -35,7 +35,7 @@ async function guardarProducto(evento) {
                 showConfirmButton: false,
                 timer: 3000,
             }).then(() => {
-                window.location.href = './productos.html';
+                window.location.href = './dashboard.html';
             });
         });
     } catch (error) {

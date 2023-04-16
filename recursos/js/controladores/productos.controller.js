@@ -9,6 +9,7 @@ async function obtenerProductos() {
         const tipo = url.searchParams.get("tipo");
         const url_q = q == null ? q : q.toLowerCase();
         const url_tipo = tipo == null ? tipo : tipo.toLowerCase();
+        const tipo_titulo = document.querySelector('[data-tipo_titulo]');
 
         const obtener_productos = await ProductosServicio.productos();
 
@@ -17,63 +18,30 @@ async function obtenerProductos() {
             producto.classList.add("producto");
 
             const producto_contenido = `
-                <a href="#" class="producto-sinlink" role="link">
+                <a href=".//producto.html?id=${elemento.id}" class="producto-sinlink" role="link">
                     <img src="${elemento.imagen}" alt="Producto 1" class="producto-imagen">
                 </a>
                 <p class="producto-nombre">
-                    <a href="#" class="producto-sinlink" role="link">${elemento.nombre}</a>
+                    <a href="./producto.html?id=${elemento.id}" class="producto-sinlink" role="link">${elemento.nombre}</a>
                 </p>
                 <p class="producto-precio">${elemento.precio}</p>
-                <div class="producto-botones" data-id="${elemento.id}">
-                    <i class="icono icono_editar productoEditar" ></i>
-                    <i class="icono icono_eliminar productoEliminar"></i>
-                </div>
+                <a href="./producto.html?id=${elemento.id}" class="producto-link" role="link">Ver producto</a>
             `;
             producto.innerHTML = producto_contenido;
-
-            const boton_eliminar = producto.querySelector(".productoEliminar");
-            boton_eliminar.addEventListener("click", eliminarProducto);
 
             if (url_q == null && url_tipo == null) {
                 productos.insertBefore(producto, productos.children[0]);
             } else if (elemento.nombre.toLowerCase().includes(url_q)) {
                 productos.insertBefore(producto, productos.children[0]);
-            } else if (elemento.tipo.toLowerCase().includes(url_tipo)) {
+            } else if (elemento.categoria.toLowerCase().includes(url_tipo)) {
                 productos.insertBefore(producto, productos.children[0]);
             }
         });
+        if(url_tipo != null)
+            tipo_titulo.innerText = `${tipo_titulo.innerHTML} de ${url_tipo}`;
     } catch (error) {
         console.log("error");
     }
-}
-
-function eliminarProducto() {
-    Swal.fire({
-        position: "center",
-        icon: "warning",
-        title: "Desea eliminar el producto?",
-        showConfirmButton: true,
-        confirmButtonText: "Si",
-        showCancelButton: true,
-        cancelButtonText: "No",
-    }).then((result) => {
-        if (result.isConfirmed) {
-            ProductosServicio.elimianrProducto(
-                this.parentElement.dataset.id
-            ).then((respuesta) => {
-                if (respuesta.ok) {
-                    obtenerProductos();
-                    Swal.fire({
-                        position: "center",
-                        icon: "success",
-                        title: "Se ha eliminado correctamente",
-                        showConfirmButton: false,
-                        timer: 3000,
-                    });
-                }
-            });
-        }
-    });
 }
 
 obtenerProductos();
