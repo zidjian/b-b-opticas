@@ -1,0 +1,171 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "usuario": "admin@gmail.com",
+      "contrasenia": "admin",
+      "nombre": "Adminsitrador",
+      "rol": "administrador"
+    },
+    {
+      "id": 2,
+      "usuario": "waldir@gmail.com",
+      "contrasenia": "12345678",
+      "nombre": "Waldir",
+      "rol": "administrador"
+    },
+    {
+      "id": 3,
+      "usuario": "orlando@gmail.com",
+      "contrasenia": "12345678",
+      "nombre": "Orlando",
+      "rol": "clientes"
+    }
+  ],
+  "productos": [
+    {
+      "id": "d54ef682-ca70-4cc4-8c7e-61ae50dd1522",
+      "nombre": "Ray Ban",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Mujer",
+      "precio": "509",
+      "imagen": "https://i.postimg.cc/X7L29kzB/805289742463-1-512x512.webp"
+    },
+    {
+      "id": "ca8eb155-cfd1-472c-8058-02e56da12b51",
+      "nombre": "Prada",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Mujer",
+      "precio": "499",
+      "imagen": "https://i.postimg.cc/qB8DvTcL/805289742470-1-512x512.webp"
+    },
+    {
+      "id": "23416c2e-2dd8-4d71-8d1a-03eb9af337fd",
+      "nombre": "Michael Cors",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Mujer",
+      "precio": "529",
+      "imagen": "https://i.postimg.cc/50z7vchf/8056597529761-1-ec2160bf-f7e1-444a-9549-da8f6b766b4f-512x512.webp"
+    },
+    {
+      "nombre": "Vougue Eyewear",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Mujer",
+      "precio": "499",
+      "imagen": "https://i.postimg.cc/vTL0qr8j/8056597548946-1-956c4687-3b06-41e0-a3c7-e122088dd412-512x512.webp",
+      "id": "c477dd68-d031-484a-a2ad-3f880a671708"
+    },
+    {
+      "nombre": "Ralph",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Mujer",
+      "precio": "459",
+      "imagen": "https://i.postimg.cc/5yMPS7JL/8056597625616-1-7cb77d84-32b4-473c-ac5e-dfc8067ae110-512x512.webp",
+      "id": "1f491f7a-6b82-4c1f-b1e5-a83295687afa"
+    },
+    {
+      "id": "ce4769f4-cf4e-42f1-9094-42c9564e949f",
+      "nombre": "Max Mara",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Mujer",
+      "precio": "357",
+      "imagen": "https://i.postimg.cc/9FC84nJj/8056597642637-1-512x512.webp"
+    },
+    {
+      "id": "4625b9c5-d026-442b-ae83-520040dd8492",
+      "nombre": "Vogue",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Varón",
+      "precio": "435",
+      "imagen": "https://i.postimg.cc/kg6n2sJq/4044709508470-1-1e878c7f-5d31-44a6-9c7d-34204d556194-512x512.webp"
+    },
+    {
+      "id": "97eb63e0-a3d4-4220-ba43-f996f1e56223",
+      "nombre": "Ralph",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Varón",
+      "precio": "654",
+      "imagen": "https://i.postimg.cc/HkqTXMn5/4046901969233-1-512x512.webp"
+    },
+    {
+      "id": "b26c356e-6b67-4205-823c-4e47e078e3de",
+      "nombre": "Kipling",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Varón",
+      "precio": "454",
+      "imagen": "https://i.postimg.cc/hPG4BgNJ/8056376256574-1-7111b91c-5dfe-473e-88f4-b906f5d473d7-512x512.webp"
+    },
+    {
+      "id": "d7d956f3-87df-40be-bc59-f968a9d2b123",
+      "nombre": "Marc Jacobs",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Varón",
+      "precio": "332",
+      "imagen": "https://i.postimg.cc/tRkRw7vQ/8056376277289-1-345672d1-8f25-448f-97e6-e542dae87a55-512x512.webp"
+    },
+    {
+      "id": "7006f684-7c57-4276-b98c-db20f4ebe0d4",
+      "nombre": "Tommy Hilfiger",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Varón",
+      "precio": "324",
+      "imagen": "https://i.postimg.cc/J0p1kdH4/8056376391237-1-2be514c8-c462-4c8b-897a-1de466b5976d-512x512.webp"
+    },
+    {
+      "id": "59f87e58-ca06-4aaf-9d13-164ead6e2cf0",
+      "nombre": "Kate Spade",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Varón",
+      "precio": "543",
+      "imagen": "https://i.postimg.cc/c45x12NF/8056376277319-1-512x512.webp"
+    },
+    {
+      "id": "d28fa846-11ab-490b-816f-4c816ec3960a",
+      "nombre": "Firense",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Niños",
+      "precio": "213",
+      "imagen": "https://i.postimg.cc/wBW8FsT0/7751000030018-1-512x512.webp"
+    },
+    {
+      "nombre": "Firenze",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Niños",
+      "precio": "324",
+      "imagen": "https://i.postimg.cc/8CkghbD7/7751000030031-1-512x512.webp",
+      "id": "023f8d72-2fc6-45c5-99d3-b5a0843ab7f5"
+    },
+    {
+      "nombre": "Seen",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Niños",
+      "precio": "324",
+      "imagen": "https://i.postimg.cc/k4zrP3SS/7751180990164-1-512x512.webp",
+      "id": "0aede470-f300-4270-a63b-84793a943ffd"
+    },
+    {
+      "id": "5bcbd732-98da-414c-8bb6-b87a1af81b9b",
+      "nombre": "Unofficial",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Niños",
+      "precio": "543",
+      "imagen": "https://i.postimg.cc/gjZCYSyT/8719154694882-1-512x512.webp"
+    },
+    {
+      "nombre": "Seen",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Niños",
+      "precio": "234",
+      "imagen": "https://i.postimg.cc/W1wPFyRR/webimage-B4-DA94-C5-047-B-4-CF9-AC850-FAE7-C60-B320-6b9ece62-37f4-4083-9cee-4fd5cc67f884-512x512.webp",
+      "id": "288bced1-5762-4b27-9c8a-18aeb659f2df"
+    },
+    {
+      "nombre": "Unofficial",
+      "descripcion": "• Peso: 50 g.\n• Material del marco: Metal\n• Tipos de rostros: Ovalado, cuadrado, triangular, redondo.\n• Incluye estuche de seguridad y limpiador de microfibra",
+      "categoria": "Niños",
+      "precio": "324",
+      "imagen": "https://i.postimg.cc/SsGNfKYr/8719154667442-1-512x512.webp",
+      "id": "5ff426e2-bc39-467e-b885-ceb5d37f874d"
+    }
+  ]
+}
