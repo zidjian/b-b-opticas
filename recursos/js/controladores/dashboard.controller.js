@@ -31,7 +31,6 @@ async function obtenerProductos() {
                     <i class="icono icono_eliminar productoEliminar"></i>
                 </div>
             `;
-            console.log(sessionStorage.getItem("rol"));
             producto.innerHTML = producto_contenido;
 
             const boton_eliminar = producto.querySelector(".productoEliminar");
@@ -45,6 +44,12 @@ async function obtenerProductos() {
                 productos.insertBefore(producto, productos.children[0]);
             }
         });
+
+        if(productos.childElementCount == 0) {
+            productos.innerHTML = `
+                <p class="producto-inexistente">Upps! No tenemos ningún producto con el nombre: ${q}</p>
+            `;
+        }
     } catch (error) {
         console.log("error");
     }

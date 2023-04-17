@@ -1,0 +1,4 @@
+.producto-inexistente {
+    grid-column: 1 / end;
+    text-align: center;
+}

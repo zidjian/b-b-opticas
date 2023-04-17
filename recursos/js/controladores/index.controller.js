@@ -24,8 +24,6 @@ async function cargarDatos() {
         `;
         producto.innerHTML = producto_contenido;
 
-        console.log(producto);
-
         if (elemento.categoria.toLowerCase().includes('varón')) {
             productos_varon.insertBefore(producto, productos_varon.children[0]);
         }

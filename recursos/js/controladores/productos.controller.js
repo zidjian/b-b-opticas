@@ -37,6 +37,12 @@ async function obtenerProductos() {
                 productos.insertBefore(producto, productos.children[0]);
             }
         });
+        if(productos.childElementCount == 0) {
+            productos.innerHTML = `
+                <p class="producto-inexistente">Upps! No tenemos ningún producto con el nombre: ${q}</p>
+            `;
+        }
+
         if(url_tipo != null)
             tipo_titulo.innerText = `${tipo_titulo.innerHTML} de ${url_tipo}`;
     } catch (error) {
