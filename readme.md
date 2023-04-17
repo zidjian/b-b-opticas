@@ -1,10 +1,8 @@
-# B&b Ópticas - ecommerce
+# B&b Ópticas - ecommerce  
+=============  
 
-## Credenciales de acceso
-
-Rol administrador: 
-    usuario - admin@gmail.com
-    contraseña - admin
-Rol cliente: 
-    usuario - orlando@gmail.com
-    contraseña - 12345678
+[Mockup de B&b Ópticas](./recursos/imagenes/mockuuups.png)  
+## Credenciales de acceso  
+=============  
+usuario - admin@gmail.com  
+contraseña - admin  
