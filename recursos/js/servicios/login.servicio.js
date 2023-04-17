@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/usuarios";
+const url = "https://my-json-server.typicode.com/zidjian/b-b-opticas/usuarios";
 
 const autenticacion = (usuario, contrasenia) => 
     fetch(`${url}?usuario=${usuario}&contrasenia=${contrasenia}`).then((respuesta) => respuesta.json());
